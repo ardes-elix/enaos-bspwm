@@ -1,0 +1,20 @@
+# Gruvbox colors for bspwm or polybar
+
+# Background
+bg=#282828
+# Foreground
+fg=#ebdbb2
+# Red
+red=#fb4934
+# Green
+green=#b8bb26
+# Yellow
+yellow=#fabd2f
+# Blue
+blue=#83a598
+# Purple
+purple=#d3869b
+# Aqua
+aqua=#8ec07c
+# Gray
+gray=#a89984

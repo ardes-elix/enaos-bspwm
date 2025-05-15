@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Set the theme colors (example gruvbox)
+source ~/.config/enaos-bspwm/themes/gruvbox.colors
+
+# Set the wallpaper
+feh --bg-scale ~/Pictures/wallpapers/your-wallpaper.jpg &
+
+# Set keyboard layout (Greek + US toggle)
+setxkbmap -layout "us,gr" -option "grp:alt_shift_toggle" &
+
+# Set Iosevka font for dunst notifications & terminals
+export FONT="Iosevka Nerd Font"
+
+# Start sxhkd for keybindings
+pgrep -x sxhkd >/dev/null || sxhkd &
+
+# Start polybar (αν το χρησιμοποιείς) ή άλλη μπάρα
+# polybar mybar &
+
+# Start compositor
+picom --config ~/.config/enaos-bspwm/picom.conf &
+
+# Start other background services here
+
+bspwm

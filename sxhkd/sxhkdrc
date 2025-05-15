@@ -1,0 +1,33 @@
+# Reload bspwm configuration
+super + Escape
+	bspc wm -r
+
+# Close focused window
+super + q
+	bspc node -c
+
+# Switch between windows
+super + {h,j,k,l}
+	bspc node -f {west,south,north,east}
+
+# Toggle floating
+super + shift + space
+	bspc node -t float
+
+# Open terminal (kitty)
+super + Return
+	kitty &
+
+# Open rofi launcher
+super + d
+	rofi -show drun
+
+# Volume controls
+XF86AudioRaiseVolume
+	amixer set Master 5%+
+
+XF86AudioLowerVolume
+	amixer set Master 5%-
+
+XF86AudioMute
+	amixer set Master toggle
